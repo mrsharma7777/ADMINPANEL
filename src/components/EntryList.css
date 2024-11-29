@@ -1,0 +1,16 @@
+.entry-list {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .entry-item {
+    background-color: #e20606;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .entry-name, .entry-mobile {
+    display: block;
+  }
+  

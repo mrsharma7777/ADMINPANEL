@@ -1,0 +1,245 @@
+/* General Layout */
+.expense-containers {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: #343a40;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin-left: 10px;
+  }
+  
+  nav ul li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Form Section */
+  .expense-form-sections {
+    display: flex;
+    height: calc(100% - 60px); /* Subtract navbar height */
+  }
+  
+  .expense-forms {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .expense-forms h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .expense-forms h2 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Totals */
+  .user-totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 200px;
+  }
+  
+  .main-card {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .cards {
+    flex: 1;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-inner p {
+    font-size: 18px;
+    color: #4a4957;
+  }
+  
+  /* Transaction Type Buttons */
+  .transaction-type-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .transaction-btn {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .transaction-btn.active,
+  .transaction-btn:hover {
+    background-color: #007bff;
+  }
+  
+  /* Form Fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #495057;
+  }
+  
+  .form-group input,
+  .react-datepicker-wrapper input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Transaction Table */
+  .live-transaction-table {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+  }
+  
+  .live-transaction-table h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transaction-table th,
+  .transaction-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .transaction-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .transaction-table td {
+    font-size: 14px;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-cards {
+      flex-direction: column;
+    }
+  
+    .transaction-type-buttons {
+      flex-direction: column;
+    }
+  
+    .transaction-btn {
+      margin-bottom: 10px;
+    }
+  }
+  /* Logout Button */
+.logout-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    width:5%;
+    font-size: 15px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .add-expense{
+    background-color: #007bff;
+    width:40%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .logout-buttons:hover {
+    background-color: #ff7875;
+    transform: scale(1.05);
+  }
+  
+  .logout-buttons:active {
+    background-color: #ff3b3f;
+  }
+  .name{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 500px;
+  }

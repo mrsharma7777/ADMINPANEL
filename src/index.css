@@ -1,0 +1,105 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 700;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: white
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* Container box styling remains the same */
+/* App.css */
+.app-container {
+  width: 100%; /* Adjust the width as needed */
+   /* Center the box with margin */
+  padding: 20px;
+  border: 0px solid #ddd; /* Light gray border */
+  border-radius: 2px; /* Rounded corners */
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+
+
+button {
+  margin:10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width:35%;
+}
+
+button:hover {
+  background-color: #c82333;
+}

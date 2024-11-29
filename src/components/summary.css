@@ -1,0 +1,129 @@
+/* Summary.css */
+
+.summary-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+.filter-section {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.filter-section label {
+  font-size: 16px;
+  margin-right: 10px;
+  color: #555;
+}
+
+.filter-section select,
+.filter-section input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.filter-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-section button:hover {
+  background-color: #0056b3;
+}
+
+.transaction-table {
+  width: 40%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th, 
+.transaction-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.transaction-table th {
+  background-color: #f4f4f4;
+}
+
+.transaction-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.transaction-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.transaction-table td h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+.total {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.total p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.total strong {
+  color: #000;
+}
+
+.total p:last-of-type {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007bff; /* Adjust the color for balance */
+}
+.summary-page {
+  padding: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.transaction-table th, .transaction-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+

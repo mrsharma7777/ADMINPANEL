@@ -1,0 +1,18 @@
+/* EntryConfirmation.css */
+.entry-confirmation {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .entry-confirmation h2 {
+    margin-bottom: 20px;
+  }
+  
+  .entry-confirmation p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .entry-confirmation button {
+    margin-top: 20px;
+  }
