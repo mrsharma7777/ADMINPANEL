@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Summary.css';
+import './summary.css';
 
 const SummaryPage = () => {
   const [date, setDates] = useState(''); // Replaced 'date' with 'dates'
