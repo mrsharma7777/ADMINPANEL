@@ -404,6 +404,7 @@ function Home() {
                     selected={new Date(editTransaction?.date || new Date())} // Set initial selected date
                     onChange={handleDateChange} // Use custom date change handler
                     dateFormat="dd/MM/yyyy"
+                     maxDate={new Date()}
                   />
                 </label>
                 <label className='color'>
