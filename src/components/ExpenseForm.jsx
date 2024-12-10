@@ -213,6 +213,7 @@ const ExpenseForm = ({ userData, setUserData, closeModal }) => {
                       selected={date}
                       onChange={(date) => setDate(date)}
                       dateFormat="dd/MM/yyyy"
+                       maxDate={new Date()}
                     />
                   </div>
                 </div>    
