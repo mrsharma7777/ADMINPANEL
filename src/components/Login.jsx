@@ -353,9 +353,7 @@ const LoginSignup = ({ onLogin }) => {
             </div>
             <button onClick={() => navigate('/admin-login')}>Go to User Portal</button>
           </div>
-          <div className="forgot-password">
-            <span onClick={() => setForgotPassword(true)}>Forgot Password?</span>
-          </div>
+           <p className="text-center" style={{ color: "white", fontWeight: "bold" }}>Created By JRInfotech </p>
         </>
       )}
     </div>
