@@ -161,8 +161,8 @@ const ExpenseForm = ({ userData, setUserData, closeModal }) => {
 
       closeModal();
     } catch (error) {
-      console.error('Error saving transaction:', error);
-      alert('Error saving the transaction. Please try again.');
+      // console.error('Error saving transaction:', error);
+      alert('Please Select Debit or Credit.');
     }
   };
 
