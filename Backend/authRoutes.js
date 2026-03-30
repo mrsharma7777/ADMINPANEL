@@ -8,11 +8,14 @@ const { Pool } = require("pg");
 const router = express.Router();
 
 const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
+  host: "dpg-d751rqadbo4c73954s0g-a.singapore-postgres.render.com",
+  user: "database_h3vo_user",
   port: 5432,
-  password: "", // Set your actual DB password
-  database: "transactions_db",
+  password: "KZpmmayzsDgVmoBkMP082AigcOXpoMKD",// Set your actual DB password
+  database: "database_h3vo",
+  ssl: {
+    rejectUnauthorized: false,// Required for many cloud-hosted PostgreSQL providers
+  },
 });
 
 const SECRET_KEY = "your_jwt_secret"; // Use a strong secret key in production
