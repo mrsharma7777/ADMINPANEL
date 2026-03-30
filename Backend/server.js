@@ -22,12 +22,14 @@ app.use(bodyParser.json());
 app.use("/auth", authRoutes);
 
 const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
+host: "dpg-d751rqadbo4c73954s0g-a.singapore-postgres.render.com",
+  user: "database_h3vo_user",
   port: 5432,
-  password: "",
-  database: "transactions_db",
-});
+  password: "KZpmmayzsDgVmoBkMP082AigcOXpoMKD",// Set your actual DB password
+  database: "database_h3vo",
+  ssl: {
+    rejectUnauthorized: false,// Required for many cloud-hosted PostgreSQL providers
+  },
 
 app.use(cors());
 app.use(express.json());
